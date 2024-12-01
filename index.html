@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Pro - Centro de Entrenamiento</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6b00;
+        }
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .navbar .nav-links a:hover {
+            color: #ff6b00;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+            url('img/fondoindex.webp');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            background-color: #ff6b00;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #ff8c00;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">FITNESS PRO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="login.php">Cursos</a></li>
+            
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Transforma tu Cuerpo</h1>
+        <p>Únete a Fitness Pro y comienza tu viaje hacia un estilo de vida más saludable. Nuestros entrenadores profesionales te guiarán en cada paso.</p>
+        <a href="login.php" class="cta-button">Ver Cursos</a>
+    </section>
+</body>
+</html>

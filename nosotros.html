@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Gimnasio Fitness Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6b00;
+        }
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .navbar .nav-links a:hover {
+            color: #ff6b00;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://img.freepik.com/fotos-premium/entrenamiento-gimnasio-grupo-personas-haciendo-ejercicio_23-2148684447.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            background-color: #ff6b00;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #ff8c00;
+        }
+        header {
+            padding: 80px 0 30px;
+            text-align: center;
+            background-color: #000;
+            color: white;
+        }
+        .container {
+            margin-top: 50px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            font-size: 32px;
+            font-weight: 600;
+            color: #ff6b00;
+            margin-bottom: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+        .card-body h3 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .card-body p {
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .card-body .social-icons a {
+            margin: 0 10px;
+            color: #ff6b00;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        .card-body .social-icons a:hover {
+            color: #ff8c00;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">FITNESS PRO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="login.php">Cursos</a></li>
+            
+        </ul>
+    </nav>
+
+    
+
+    <header>
+        <div class="container">
+            <h1 class="text-4xl font-bold">Conoce Nuestro Equipo</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2 class="section-title">Nuestra Historia</h2>
+            <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+                <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                    Fundado en 2014, Gimnasio Fitness Pro nació de la pasión por ayudar a las personas a transformar sus vidas a través del fitness. Comenzamos como un pequeño gimnasio local con el sueño de crear un espacio donde cada persona pudiera sentirse motivada, apoyada y desafiada en su journey de salud y bienestar.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    A lo largo de los años, hemos crecido no solo en tamaño, sino en nuestra capacidad para inspirar y guiar a personas de todos los niveles de condición física hacia sus metas más ambiciosas.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Nuestro Equipo</h2>
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card">
+                    <img src="img/jaimee.png" alt="Entrenador Principal">
+                    <div class="card-body">
+                        <h3>Jaime Pergueza</h3>
+                        <p>Entrenador Principal</p>
+                        <p class="italic">"Mi misión es ayudarte a descubrir tu potencial máximo y superar tus propios límites."</p>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2024 Gimnasio Fitness Pro. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
